@@ -30,7 +30,7 @@ body {
 }
 
 ol, ul {
-	list-style: none;
+	list-style-type: "none";
 }
 
 blockquote, q {
@@ -144,7 +144,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
+		font-family: "monospace",monospace;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
@@ -177,7 +177,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "monospace",monospace;
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -2798,7 +2798,7 @@ input, select, textarea {
 
 	ul.icons {
 		cursor: default;
-		list-style: none;
+		list-style: "none";
 		padding-left: 0;
 	}
 
@@ -2831,9 +2831,13 @@ input, select, textarea {
 		}
 
 /* List */
+	li {
+		list-style-type: "*";
+		padding-left: 0.25rem;
+	}
 
 	ol {
-		list-style: decimal;
+		list-style: "decimal";
 		margin: 0 0 2rem 0;
 		padding-left: 1.25rem;
 	}
@@ -2843,17 +2847,18 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2rem 0;
 		padding-left: 1rem;
 	}
 
 		ul li {
+			list-style-type: "-";
 			padding-left: 0.5rem;
 		}
 
 		ul.divided {
-			list-style: none;
+			list-style: "none";
 			padding-left: 0;
 		}
 
